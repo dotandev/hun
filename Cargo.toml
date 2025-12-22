@@ -1,0 +1,22 @@
+[package]
+name = "hun"
+version = "0.1.0"
+edition = "2021"
+description = "Hun: The History Unification Node. A supercharged shell history tool with SQLite backend and TUI."
+license = "MIT"
+repository = "https://github.com/dotandev/hun"
+keywords = ["cli", "history", "shell", "sqlite", "tui"]
+categories = ["command-line-utilities", "development-tools"]
+readme = "README.md"
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+rusqlite = { version = "0.30", features = ["bundled"] }
+ratatui = "0.25"
+crossterm = "0.27"
+chrono = "0.4"
+dirs = "5.0"
+fuzzy-matcher = "0.3"
+arboard = "3.3"
+anyhow = "1.0"
+hostname = "0.3"
